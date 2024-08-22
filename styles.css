@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 42px 100px;
+}
+
+/* Navbar */
+
+header.navbar-container {
+    display: flex;
+    padding: 0 16px;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 62px;
+
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #000;
+    border-radius: 8px;
+}
+
+.brand-logo h1 {
+    font-size: 32px;
+    color: #fff;
+}
+
+header .nav-list ul {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.nav-list ul li {
+    list-style-type: none;
+}
+
+.nav-list ul li a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.nav-list ul li a:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 12px 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+        background-color: #fff;
+    
+        color: #000;
+    
+
+}
+
+/* Hero */
+
+section.hero-content {
+    display: flex;
+    flex-direction: row;
+
+    margin: 124px 0;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.pre-name h2 {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main-name {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.main-name h1 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.caption {
+    max-width: 528px;
+    margin-right: 2rem;
+}
+
+.caption p {
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #2e2e2e;
+}
+
+.location {
+    display: flex;
+
+    margin-top: 153px;
+    
+    gap: 8px;
+    align-items: center;
+}
+
+.name-location {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.icon-location img {
+    width: 24px;
+    height: 24px;
+}
+
+.content-image img {
+    width: 247px;
+    height: 315px;
+}
+
+.content-image {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: end;
+}
+
+/* About Me*/
+
+section.aboutme-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 124px 0;
+
+    align-items: center;
+}
+
+.tentang h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.headercontent {
+    display: flex;
+    margin-top: 85px;
+    gap: 8px;
+    align-items: center;
+}
+
+.headercontent img {
+    width: 28px;
+    height: 28px;
+}
+
+.headercontent p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.pendidikan-content,
+.pengalaman-content {
+    margin-top: 32px;
+}
+
+.pendidikan-content h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.pendidikan-content h2 {
+    margin-top: 8px;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.pendidikan-content p {
+    margin-top: 32px;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.pengalaman-content h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.pengalaman-content h2 {
+    margin-top: 8px;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.pengalaman-content p {
+    margin-top: 32px;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.quote p {
+    margin-top: 32px;
+
+    width: 572px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+
+    line-height: 24px;
+}
+
+section.portofolio-content {
+    display: flex;
+    flex-direction: row;
+
+    margin: 124px 0;
+
+    align-items: center;
+}
+
+.portofolio-head h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.portofolio-card {
+    margin-top: 85px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.portofolio-1,
+.portofolio-2,
+.portofolio-3 {
+    margin: 5% auto;
+    display: flex;
+    width: 100%;
+    min-width: 350px;
+    max-width: 350px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    border: 1px solid #9c9a9a;
+    background-color: #FFF;
+    overflow: hidden;
+    transition: all 0.15s ease-in-out;
+    
+}
+
+.portofolio-header {
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.portofolio-header h1 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+
+    color: black;
+}
+
+.portofolio-header p {
+    margin-top: 16px;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #2e2e2e;
+}
+
+.portofolio-1:hover {
+    background: linear-gradient(180deg, #FFF 57.62%, #D9D9D9 187.09%);
+    box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.portofolio-2:hover {
+    background: linear-gradient(180deg, #FFF 57.62%, #D9D9D9 187.09%);
+    box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.portofolio-3:hover {
+    background: linear-gradient(180deg, #FFF 57.62%, #D9D9D9 187.09%);
+    box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+
+/* Responsive Screen */
+
+/* Responsive Screen */
+
+/* Tablet Screens (width 768px and below) */
+@media (max-width: 768px) {
+    body {
+        margin: 24px 50px;
+    }
+
+    header.navbar-container {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 16px;
+    }
+
+    .nav-list {
+        margin: 20px 0;
+    }
+
+    section.hero-content {
+        flex-direction: column;
+        margin: 64px 0;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .location {
+        margin-top: 50px;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .content-image {
+        display: none;
+    }
+
+    .quote p {
+        width: 100%;
+    }
+
+    section.portofolio-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portofolio-card {
+        width: 100%;
+        margin: 16px auto;
+    }
+}
+
+/* Mobile Screens (width 480px) */
+
+@media (max-width: 480px) {
+    body {
+        margin: 16px 24px;
+    }
+
+    .brand-logo h1 {
+        font-size: 24px;
+    }
+
+    .nav-list {
+        margin: 20px 0;
+    }
+    .nav-list ul {
+        flex-direction: column;
+        gap: 1rem;
+        
+        align-items: center;
+    }
+
+    section.hero-content {
+        margin: 32px 0;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .main-name h1 {
+        font-size: 1.5rem;
+    }
+
+    .caption p, 
+    .name-location, 
+    .pendidikan-content h2, 
+    .pengalaman-content h2, 
+    .quote p {
+        font-size: 0.875rem;
+    }
+
+    .location {
+        display: flex;
+    }
+
+    .content-image img {
+        display: none;
+    }
+
+    section.aboutme-content {
+        margin: 64px 0;
+    }
+
+
+    .about-image img {
+        width: 95%;
+        height: auto;
+    
+    }
+
+    .tentang h1 {
+        font-size: 20px;
+    }
+
+    .headercontent p, 
+    .pendidikan-content h1, 
+    .pengalaman-content h1, 
+    .portofolio-head h1 {
+        font-size: 20px;
+    }
+
+    .portofolio-card {
+        min-width: 100%;
+        margin: 8px auto;
+    }
+}
+
+/* Extra Small Screens (width 320px and below) */
+@media (max-width: 320px) {
+    body {
+        margin: 8px 16px;
+    }
+
+    .brand-logo h1 {
+        font-size: 20px;
+    }
+
+    .nav-list ul li a {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .main-name h1 {
+        font-size: 1.25rem;
+    }
+
+
+    .content-image img {
+        display: none;
+    }
+
+    .headercontent p, 
+    .pendidikan-content h1, 
+    .pengalaman-content h1, 
+    .portofolio-head h1 {
+        font-size: 18px;
+    }
+
+    .quote p {
+        font-size: 0.75rem;
+    }
+
+    .portofolio-card {
+        min-width: 100%;
+    }
+}
